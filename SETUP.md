@@ -11,9 +11,9 @@ cd mallob-bridged
 git checkout fallob
 git clone git@github.com:domschrei/netcat-file-bridge.git
 cd ..
-sudo bash build.sh
 # Change three occurrences of "/home/schreiber/Software/fallob" to your absolute path of the fallob directory:
-sudo vim fallob-data/fallob-configuration.json
+vim backend/fallob-configuration-defaultPaths.json
+sudo bash build.sh
 ```
 
 ## 2. Home machine

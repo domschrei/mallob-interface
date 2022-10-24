@@ -21,8 +21,8 @@
     "paths": {
         "databaseBasePath": "./fallob-data/fallobDatabase.mv.db",
         "mallobBasePath": "/home/schreiber/Software/mallob-bridged/",
-        "resultBasePath": "./fallob-data/results",
-        "descriptionsBasePath": "./fallob-data/descriptions"
+        "resultBasePath": "/home/schreiber/Software/fallob/mallob-bridged/jobresults",
+        "descriptionsBasePath": "/home/schreiber/Software/fallob/mallob-bridged/descriptions"
         },
     "database": {
         "databaseUsername": "fallob",
