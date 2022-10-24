@@ -35,6 +35,7 @@ git clone git@github.com:domschrei/netcat-file-bridge.git
 ( cd lib && bash fetch_and_build_sat_solvers.sh )
 mkdir -p build; cd ./build ; cmake .. -DCMAKE_BUILD_TYPE=RELEASE -DMALLOB_ASSERT=1 -DMALLOB_USE_ASAN=0 -DMALLOB_USE_JEMALLOC=0 -DMALLOB_LOG_VERBOSITY=4 -DMALLOB_SUBPROC_DISPATCH_PATH=\"build/\" -DMALLOB_USE_GLUCOSE=1 && make -j4 ; cd ..
 rm -rf logs/.api # only for subsequent (re-)starts
+# in the "connect.sh" shell from your home machine:
 RDMAV_FORK_SAFE=1 mpirun -np 16 --oversubscribe build/mallob -t=1 -log=logs/.api/ -v=4 -iff
 # in another shell:
 netcat-file-bridge/mallob/setup_interface_at_mallob.sh
