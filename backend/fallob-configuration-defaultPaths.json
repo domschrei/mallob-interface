@@ -20,7 +20,7 @@
         },
     "paths": {
         "databaseBasePath": "./fallob-data/fallobDatabase.mv.db",
-        "mallobBasePath": "/home/simon/dev/mallob/",
+        "mallobBasePath": "/home/schreiber/Software/mallob-bridged/",
         "resultBasePath": "./fallob-data/results",
         "descriptionsBasePath": "./fallob-data/descriptions"
         },
