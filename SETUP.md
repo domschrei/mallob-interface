@@ -4,13 +4,16 @@
 ## 1. Login machine
 
 ```
-git clone git@github.com:domschrei/mallob-interface.git
-cd mallob-interface
+git clone git@github.com:domschrei/mallob-interface.git fallob
+cd fallob
 git clone git@github.com:domschrei/mallob.git mallob-bridged
 cd mallob-bridged
 git checkout fallob
 git clone git@github.com:domschrei/netcat-file-bridge.git
 cd ..
+sudo bash build.sh
+# Change three occurrences of "/home/schreiber/Software/fallob" to your absolute path of the fallob directory:
+sudo vim fallob-data/fallob-configuration.json
 ```
 
 ## 2. Home machine
