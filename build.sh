@@ -1,9 +1,7 @@
+#!/bin/bash
+
 rm -rf fallob-data
-mkdir fallob-data
-cd fallob-data
-mkdir results
-mkdir descriptions
-cd ..
+mkdir -p fallob-data/{results,descriptions}
 cp ./backend/src/main/resources/database/fallobDatabase.mv.db ./fallob-data/
 cp ./backend/fallob-configuration-defaultPaths.json ./fallob-data/fallob-configuration.json
 
